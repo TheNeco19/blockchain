@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blockchain verstehen</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0f0f23;
+      color: #f0f0f0;
+    }
+
+    header {
+      background: linear-gradient(90deg, #1f1f3d, #2f2f5a);
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    nav {
+      background-color: #1a1a33;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: #00ffcc;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .blockchain-animation {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2rem;
+    }
+
+    .block {
+      width: 100px;
+      height: 100px;
+      background-color: #282851;
+      margin: 0 10px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      animation: float 2s ease-in-out infinite;
+    }
+
+    .block:nth-child(2) { animation-delay: 0.3s; }
+    .block:nth-child(3) { animation-delay: 0.6s; }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+
+    .highlight {
+      color: #00ffcc;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #1f1f3d;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+  <script>
+    function showPage(pageId) {
+      const pages = document.querySelectorAll('.section');
+      pages.forEach(p => p.classList.add('hidden'));
+      document.getElementById(pageId).classList.remove('hidden');
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Blockchain verstehen</h1>
+    <p>DeFi, NFTs, Datenschutz & mehr</p>
+  </header>
+
+  <nav>
+    <a href="#" onclick="showPage('home')">Start</a>
+    <a href="#" onclick="showPage('info')">Infos</a>
+    <a href="#" onclick="showPage('video')">Video</a>
+    <a href="#" onclick="showPage('quellen')">Video</a>
+  </nav>
+
+  <div id="home" class="section">
+    <h2>Was ist eine <span class="highlight">Blockchain</span>?</h2>
+    <p>Eine Blockchain ist eine dezentrale Datenbank, die aus Blöcken besteht. Jeder Block enthält Daten und ist kryptografisch mit dem vorherigen Block verbunden.</p>
+
+    <div class="blockchain-animation">
+      <div class="block">#1</div>
+      <div class="block">#2</div>
+      <div class="block">#3</div>
+    </div>
+  </div>
+
+  <div id="info" class="section hidden">
+    <h2>Anwendungen & Herausforderungen</h2>
+    <ul>
+      <li><span class="highlight">DeFi</span>: Finanztransaktionen ohne Banken</li>
+      <li><span class="highlight">NFTs</span>: Einzigartige digitale Sammlerstücke</li>
+      <li><span class="highlight">Datenschutz</span>: Kontrolle über digitale Identität</li>
+      <li><span class="highlight">Risiken</span>: Betrug, Spekulation, Energieverbrauch</li>
+    </ul>
+    <h3>Ethische Fragestellungen</h3>
+    <p>Wie geht man mit Betrugsrisiken, digitaler Armut und Überwachung um? Welche Verantwortung tragen Entwickler und Plattformen?</p>
+  </div>
+
+  <div id="video" class="section hidden" style="text-align:center">
+    <h2>🎥 Blockchain einfach erklärt</h2>
+    <p>Dieses Video zeigt dir die Technologie und ihre Chancen & Risiken.</p>
+    <iframe width="720" height="405" src="https://www.youtube.com/embed/DEIN_VIDEO_ID" 
+            frameborder="0" allowfullscreen></iframe>
+  </div>
+   
+  <div id="quellen" class="section hidden" style="text-align:center">
+
+  </div>
+
+  <footer>
+    © 2025 Blockchain Projektarbeit – Erstellt von Marvin & Aniisanth
+  </footer>
+</body>
+</html>
