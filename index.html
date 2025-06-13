@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Blockchain verstehen</title>
   <style>
     body {
@@ -55,34 +55,6 @@
       margin: auto;
     }
 
-    .blockchain-animation {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 2rem;
-    }
-
-    .block {
-      width: 100px;
-      height: 100px;
-      background-color: #282851;
-      margin: 0 10px;
-      border-radius: 8px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-weight: bold;
-      animation: float 2s ease-in-out infinite;
-    }
-
-    .block:nth-child(2) { animation-delay: 0.3s; }
-    .block:nth-child(3) { animation-delay: 0.6s; }
-
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-15px); }
-    }
-
     .highlight {
       color: #00ffcc;
       font-weight: bold;
@@ -98,6 +70,14 @@
 
     .hidden {
       display: none;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 0.6rem;
     }
   </style>
   <script>
@@ -127,23 +107,53 @@
   <div id="home" class="section">
     <h2>Was ist eine <span class="highlight">Blockchain</span>?</h2>
     <p>Eine Blockchain ist eine dezentrale Datenbank, die aus Blöcken besteht. Jeder Block enthält Daten und ist kryptografisch mit dem vorherigen Block verbunden.</p>
-    <div class="blockchain-animation">
-      <div class="block">1</div>
-      <div class="block">2</div>
-      <div class="block">3</div>
-    </div>
   </div>
 
   <div id="info" class="section hidden">
-    <h2>Anwendungen & Herausforderungen</h2>
+    <h2>Anwendungen der Blockchain</h2>
     <ul>
-      <li><span class="highlight">DeFi</span>: Finanztransaktionen ohne Banken</li>
-      <li><span class="highlight">NFTs</span>: Einzigartige digitale Sammlerstücke</li>
-      <li><span class="highlight">Datenschutz</span>: Kontrolle über digitale Identität</li>
-      <li><span class="highlight">Risiken</span>: Betrug, Spekulation, Energieverbrauch</li>
+      <li><span class="highlight">DeFi (Decentralized Finance)</span>: Finanzsysteme ohne zentrale Banken – direkte Kredite, Zahlungen & mehr.</li>
+      <li><span class="highlight">NFTs</span>: Einzigartige, digitale Sammlerstücke – z. B. Kunst, Musik, Videos mit Eigentumsnachweis.</li>
+      <li><span class="highlight">Digitale Identität & Datenschutz</span>: Nutzer behalten Kontrolle über ihre Daten & Identitäten.</li>
     </ul>
-    <h3>Ethische Fragestellungen</h3>
-    <p>Wie geht man mit Betrugsrisiken, digitaler Armut und Überwachung um? Welche Verantwortung tragen Entwickler und Plattformen?</p>
+
+    <h2>Risiken & Herausforderungen</h2>
+    <ul>
+      <li><span class="highlight">Betrug</span>: Scams und Fake-Projekte nutzen Unwissenheit vieler aus.</li>
+      <li><span class="highlight">Missbrauch</span>: Geldwäsche, Erpressung (z. B. mit Ransomware), Darknet-Zahlungen.</li>
+      <li><span class="highlight">Energieverbrauch</span>: Vor allem Proof-of-Work-Netzwerke verbrauchen sehr viel Strom.</li>
+      <li><span class="highlight">Volatilität</span>: Kryptowährungen schwanken stark im Wert.</li>
+    </ul>
+
+    <h2>Ethische Fragestellungen</h2>
+    <ul>
+      <li>Sind Spekulation und NFT-Hypes moralisch vertretbar?</li>
+      <li>Wie schützt man Bürger vor Betrug und Übervorteilung?</li>
+      <li>Wie viel Regulierung braucht es – ohne Innovation zu blockieren?</li>
+      <li>Wie geht man mit digitaler Ungleichheit und Zugangslücken um?</li>
+    </ul>
+
+    <h2>Gesellschaftliche Auswirkungen</h2>
+    <ul>
+      <li><span class="highlight">Disruption</span> traditioneller Branchen (Banken, Verwaltungen).</li>
+      <li><span class="highlight">Demokratisierung</span> von Finanzsystemen – aber auch Gefahr von Elitenbildung durch “Early Adopters”.</li>
+      <li><span class="highlight">Vertrauenswandel</span>: Vertrauen in Code statt in Institutionen.</li>
+    </ul>
+
+    <h2>Lösungsansätze</h2>
+    <ul>
+      <li>Stärkere <span class="highlight">Bildung & Aufklärung</span> für Nutzer.</li>
+      <li>Technologien wie <span class="highlight">Proof of Stake</span> zur Energieeinsparung.</li>
+      <li><span class="highlight">Regulierung</span> durch Gesetze – z. B. MiCA in der EU.</li>
+      <li>Entwicklung transparenter & sicherer Smart Contracts.</li>
+    </ul>
+
+    <h2>Zukunftsszenarien</h2>
+    <ul>
+      <li><span class="highlight">Optimistisch</span>: Faire Finanzsysteme, sichere Identitäten, nachhaltige Blockchains.</li>
+      <li><span class="highlight">Pessimistisch</span>: Zentrale Plattformen übernehmen Macht, Umweltprobleme verschärfen sich.</li>
+      <li><span class="highlight">Realistisch</span>: Mischform – Chance & Risiko gleichzeitig, abhängig von Regulierung & Technikentwicklung.</li>
+    </ul>
   </div>
 
   <div id="video" class="section hidden" style="text-align:center">
