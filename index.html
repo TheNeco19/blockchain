@@ -24,6 +24,12 @@
       font-size: 2.5rem;
     }
 
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
     nav {
       background-color: #1a1a33;
       text-align: center;
@@ -36,6 +42,11 @@
       text-decoration: none;
       font-weight: bold;
       cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffffff;
     }
 
     .section {
@@ -82,6 +93,7 @@
       text-align: center;
       padding: 1rem;
       font-size: 0.9rem;
+      color: #aaa;
     }
 
     .hidden {
@@ -95,7 +107,6 @@
       document.getElementById(pageId).classList.remove('hidden');
     }
 
-    // Standardmäßig "home" anzeigen beim Laden
     window.onload = function() {
       showPage('home');
     }
@@ -116,7 +127,6 @@
   <div id="home" class="section">
     <h2>Was ist eine <span class="highlight">Blockchain</span>?</h2>
     <p>Eine Blockchain ist eine dezentrale Datenbank, die aus Blöcken besteht. Jeder Block enthält Daten und ist kryptografisch mit dem vorherigen Block verbunden.</p>
-
     <div class="blockchain-animation">
       <div class="block">1</div>
       <div class="block">2</div>
@@ -143,7 +153,7 @@
   </div>
 
   <footer>
-    © 2025 Blockchain Projektarbeit – Erstellt von Marvin & Aniisanth & Nam Thai & Aabid
+    © 2025 Blockchain Projektarbeit – Erstellt von Marvin, Aniisanth, Nam Thai & Aabid
   </footer>
 </body>
 </html>
